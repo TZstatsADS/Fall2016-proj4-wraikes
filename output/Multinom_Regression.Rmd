@@ -7,7 +7,7 @@
 
 ![formula](https://github.com/TZstatsADS/Fall2016-proj4-wraikes/blob/master/figs/multinomial_regression.png)
   
-Three metrics were gathered from each of the 16 music features, creating 46 covariates.
+Three metrics were gathered from each of the 15 music features, creating 45 covariates.
 
 * Mean
 * Standard Deviation
@@ -15,7 +15,7 @@ Three metrics were gathered from each of the 16 music features, creating 46 cova
 
 ### An Example
 
-Coefficients for Word "hallelujah":
+Sample Coefficients for Word "hallelujah":
 
 Coefficient | Avg_1 | Hallelujah_1 | Avg_2 | Hallelujah_2
 -------|------|------|------|------
