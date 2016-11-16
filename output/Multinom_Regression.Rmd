@@ -1,17 +1,11 @@
----
-title: "Million Song Data"
-output: html_document
----
+# Million Song Data - Project 4
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 ### Multinomial Regression
 
 - Varying amount of words per song.
 
-  [INSERT FORMULA]
+![formula](https://github.com/TZstatsADS/Fall2016-proj4-wraikes/blob/master/figs/multinomial_regression.png)
   
 Three metrics were gathered from each of the 16 music features, creating 46 covariates.
 
@@ -31,7 +25,7 @@ coefficients_df
 
 The predicted words are based on the expected value from the associated model.
 
-E[X] = 0 x P(X = 0) + 1 x P(X = 1) + 2 x P(X = 2) ...
+E[X] = 0 * P(X = 0) + 1 * P(X = 1) + 2 * P(X = 2) ...
 
 Expected number of time "Hallelujah" mentioned in song 157: 0.12.
 
