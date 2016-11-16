@@ -19,9 +19,9 @@ Coefficients for Word "hallelujah":
 
 Coefficient | Avg_1 | Hallelujah_1 | Avg_2 | Hallelujah_2
 -------|------|------|------|------
-Bars_Confidence_Mean | -3.37 | 22.77 | 0.07 | -7.46
-Bars_Start_Mean | -7.39 | -33.47   | -1.88   | -48.24   
-Beats_Confidence_Mean | -0.52  | -1.78  | -0.34   | 1.37
+Bars_Confidence_Mean | -7.39 | -33.47   | -1.88   | -48.24   
+Bars_Start_Mean | -0.52  | -1.78  | -0.34   | 1.37
+Beats_Confidence_Mean |  1.03   |  -5.24   |    5.44  |  -25.71
 Beats_Confidence_SD | 1.84| -30.68  |3.16 | -13.4
 Sections_Confidence_SD |   4.15 | 27.93   | 3.37   |  66.32
 Segments_Start_SD  |  -0.42 | 0.79   |  -0.61    |  2.65
