@@ -37,7 +37,7 @@ The predicted words are based on the expected value from the associated model.
 
 E[X] = 0 * P(X = 0) + 1 * P(X = 1) + 2 * P(X = 2) ...
 
-Expected number of time "Hallelujah" mentioned in song 157 is 0.12.
+Expected number of times "Hallelujah" mentioned in song 157 is 0.12.
 
 0.12 = 0 x (0.94) + 1 x (0.00) + 2 x (0.06)
 
