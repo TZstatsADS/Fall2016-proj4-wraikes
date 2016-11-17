@@ -27,7 +27,7 @@ Sections_Confidence_SD |   4.15 | 27.93   | 3.37   |  66.32
 Segments_Start_SD  |  -0.42 | 0.79   |  -0.61    |  2.65
 Bars_Start_Length |  -0.04   |  -0.1   |  -0.03    |  -0.02
 Sections_Start_Length  |   0.78  |  2.14    |  1.6     | 0.66
-Tatums_Start_Lenngth  |    -0.02    |  0.0      |  -0.04     |  0.0 
+Tatums_Start_Length  |    -0.02    |  0.0      |  -0.04     |  0.0 
 
 
 
@@ -53,4 +53,6 @@ The rank ordering is based on this summation of all expected values, for the giv
 
 ### Next Steps
 
-5-fold Cross-Validation
+* 5-fold Cross-Validation
+* Explore Different Models
+* Feature Analysis
