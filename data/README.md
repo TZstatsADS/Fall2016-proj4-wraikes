@@ -1,5 +1,5 @@
 # Project: Words 4 Music
 ### Data folder
 
-The data directory contains data used in the analysis. This is treated as read only; in paricular the R/python files are never allowed to write to the files in here. Depending on the project, these might be csv files, a database, and the directory itself may have subdirectories.
+The data directory contains the coefficients for all the models associated with each individual word. The coefficients can be analyzed to see how different words compare to different music features.
 

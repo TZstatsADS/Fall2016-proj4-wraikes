@@ -1,19 +1,13 @@
----
-title: "Million Song Data"
-output: html_document
----
+# Million Song Data - Project 4
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 ### Multinomial Regression
 
 - Varying amount of words per song.
 
-  [INSERT FORMULA]
+![formula](https://github.com/TZstatsADS/Fall2016-proj4-wraikes/blob/master/figs/multinomial_regression.png)
   
-Three metrics were gathered from each of the 16 music features, creating 46 covariates.
+Three metrics were gathered from each of the 15 music features, creating 45 covariates.
 
 * Mean
 * Standard Deviation
@@ -21,23 +15,34 @@ Three metrics were gathered from each of the 16 music features, creating 46 cova
 
 ### An Example
 
-Coefficients for Word "hallelujah":
+Sample Coefficients for Word "hallelujah":
 
-```{r}
-coefficients_df
-```
+Coefficient | Avg_1 | Hallelujah_1 | Avg_2 | Hallelujah_2
+-------|------|------|------|------
+Bars_Confidence_Mean | -7.39 | -33.47   | -1.88   | -48.24   
+Bars_Start_Mean | -0.52  | -1.78  | -0.34   | 1.37
+Beats_Confidence_Mean |  1.03   |  -5.24   |    5.44  |  -25.71
+Beats_Confidence_SD | 1.84| -30.68  |3.16 | -13.4
+Sections_Confidence_SD |   4.15 | 27.93   | 3.37   |  66.32
+Segments_Start_SD  |  -0.42 | 0.79   |  -0.61    |  2.65
+Bars_Start_Length |  -0.04   |  -0.1   |  -0.03    |  -0.02
+Sections_Start_Length  |   0.78  |  2.14    |  1.6     | 0.66
+Tatums_Start_Length  |    -0.02    |  0.0      |  -0.04     |  0.0 
+
+
 
 ### Predicted Words
 
 The predicted words are based on the expected value from the associated model.
 
-E[X] = 0 x P(X = 0) + 1 x P(X = 1) + 2 x P(X = 2) ...
+E[X] = 0 * P(X = 0) + 1 * P(X = 1) + 2 * P(X = 2) ...
 
-Expected number of time "Hallelujah" mentioned in song 157: 0.12.
+Expected number of times "Hallelujah" mentioned in song 157 is 0.12.
 
-0.12 = 0 x (0.94) + 1 x (0.00) + 2 x (0.06)
+0.12 = 0 * (0.94) + 1 * (0.00) + 2 * (0.06)
 
 Song # | E(X)
+-------|------
 155 | 0.0
 156 | 0.0
 157 | 0.12
@@ -48,4 +53,6 @@ The rank ordering is based on this summation of all expected values, for the giv
 
 ### Next Steps
 
-5-fold Cross-Validation
+* 5-fold Cross-Validation
+* Explore Different Models
+* Feature Analysis
