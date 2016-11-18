@@ -1,0 +1,51 @@
+---
+title: "Million Song Data"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Multinomial Regression
+
+- Varying amount of words per song.
+
+  [INSERT FORMULA]
+  
+Three metrics were gathered from each of the 16 music features, creating 46 covariates.
+
+* Mean
+* Standard Deviation
+* Length
+
+### An Example
+
+Coefficients for Word "hallelujah":
+
+```{r}
+coefficients_df
+```
+
+### Predicted Words
+
+The predicted words are based on the expected value from the associated model.
+
+E[X] = 0 x P(X = 0) + 1 x P(X = 1) + 2 x P(X = 2) ...
+
+Expected number of time "Hallelujah" mentioned in song 157: 0.12.
+
+0.12 = 0 x (0.94) + 1 x (0.00) + 2 x (0.06)
+
+Song # | E(X)
+155 | 0.0
+156 | 0.0
+157 | 0.12
+158 | 0.0
+
+
+The rank ordering is based on this summation of all expected values, for the given songs.
+
+### Next Steps
+
+5-fold Cross-Validation
