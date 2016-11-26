@@ -3,7 +3,7 @@
 
 ### Multinomial Regression
 
-- Varying amount of words per song.
+- Because of varying amount of words per song, and multinomial regression was fit to each individual word, using the music features as covariates.
 
 ![formula](https://github.com/TZstatsADS/Fall2016-proj4-wraikes/blob/master/figs/multinomial_regression.png)
   
@@ -48,11 +48,4 @@ Song # | E(X)
 157 | 0.12
 158 | 0.0
 
-
 The rank ordering is based on this summation of all expected values, for the given songs.
-
-### Next Steps
-
-* 5-fold Cross-Validation
-* Explore Different Models
-* Feature Analysis
